@@ -1,0 +1,285 @@
+body{
+    background:rgb(166, 197, 211);
+    border: 2px rgb(0, 0, 0) solid;
+    margin-left: 170px;
+    margin-right: 30px;
+    border-radius: 23px; 
+}
+
+html{
+    background-color: rgb(93, 100, 106);
+}
+
+.cabecalho{
+    background-color: rgb(103, 130, 180);
+    padding: 15px;
+    position: fixed;
+    left: -39px;
+    top: 8px;
+    border: rgb(0, 0, 0) 3px solid;
+    border-radius: 20px; 
+}
+
+.cabecalho a{
+    color: white;
+    text-decoration: none;
+}
+
+a{  
+    font-family:'Lucida Grande';
+    transition: 0.5s;
+    filter: opacity(100%);
+    text-decoration: none;
+    border-radius: 20px;
+    border: rgb(255, 255, 255) solid 3px;
+    padding: 4px;
+}
+
+a:hover{
+    transition: 0.1s;
+    background-color: #000000;
+    font-family: Impact, Haettenschweiler, 'Arial', sans-serif;
+    text-decoration: none;
+    border-radius: 8px;
+}
+
+h1{
+    font-family: monospace;
+    font-size: 35px;
+    border-radius: 20px;
+    text-align: center;
+
+}
+
+h2{
+    font-size: 25px;
+    text-align: center;
+    background-color: #fff;
+    border-radius: 20px;
+    margin-left: 25%;
+    margin-right: 25%;
+}
+
+h3{
+    font-size: 23px;
+    text-align: center;
+    text-decoration: underline;
+
+}
+
+p{
+    color: rgb(0, 0, 0);
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 23px; /* */
+    margin-left: 40px;
+    margin-right: 60px;
+}
+
+#texto{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+hr{
+    border-color: rgb(84, 60, 92); 
+}
+
+.TinkerCad{
+    text-align: center;
+}
+
+img{  
+    display: block;            
+    margin-left: auto;       
+    margin-right: auto;      
+    max-width: 100%;         
+    height: auto;     
+    border-radius: 40px; 
+    border: rgb(0, 0, 0) solid 3px;
+
+}  
+
+.jogo_text{
+    font-size: 50px;
+    text-align: center;
+}
+
+.jogolink{
+    font-size: 50px;
+    color: rgb(0, 0, 0);
+    filter: opacity(100%);
+    font-family: Impact, Haettenschweiler, 'Arial', sans-serif;
+    text-decoration: none;
+    border: rgb(255, 255, 255) solid 4px;
+    border-radius: 30px;
+    padding: 10px;
+}
+
+.jogolink:hover{
+    padding: 10px;
+    color: #fff;
+}
+
+footer{
+    background-color: #53575a;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    border: #fff;
+    border-radius: 20px;
+}
+
+.a_footer{
+    transition: 0.0s;
+    filter: opacity(100%);
+    font-family: Impact, Haettenschweiler, 'Arial', sans-serif;
+    text-decoration: none;
+    border-radius: 20px;
+    padding: 4px;
+    font-size: small;
+    color: rgb(255, 255, 255);
+    border-color:#fff;
+}
+
+.a_footer:hover{
+    font-family: Impact, Haettenschweiler, 'Arial', sans-serif;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+.video_home {  
+    display: block; /* Makes the iframe a block element */  
+    margin: 20px auto; /* Centers the iframe horizontally with margin */  
+    border: none; /* Removes the default border */  
+    max-width: 100%; /* Ensures the iframe is responsive */  
+} 
+ 
+
+@media (max-width: 500px) {  
+    body{
+        background:linear-gradient(to left rgb(110, 136, 158), rgb(132, 154, 172));
+        border: 10px rgb(0, 0, 0);
+        margin-left: 0rem;
+        margin-right: 0rem;
+        border-radius: 4rem; 
+    }
+    
+    html{
+        background-color: rgb(93, 100, 106);
+    }
+
+    .jogo_text {  
+        margin-top: 20px;
+    }  
+
+    ul{
+        list-style: none;
+    }
+    
+    a{  
+        color: black;
+        filter: opacity(100%);
+        font-family: Impact, Haettenschweiler, 'Arial', sans-serif;
+        text-decoration: none;
+        border-radius: 20px;
+        border: rgb(0, 0, 0) solid 2px;
+        padding: 5px;
+        background-color: rgb(255, 140, 0);
+    }
+    
+    a:hover{
+        font-family: Impact, Haettenschweiler, 'Arial', sans-serif;
+        text-decoration: none;
+        color: rgb(255, 255, 255);
+        padding: 0.1rem
+    }
+    
+    .cabecalho{
+        background-color: darkgray;
+        padding: 15px;
+        left: -39px;
+        top: 8px;
+        border-radius: 40px;
+        position: static;
+        border: rgb(0, 0, 0) solid 2px;
+    }
+    .cabecalho a{
+        color: rgb(255, 255, 255);
+        text-decoration: none;
+    }
+    div .fonte{
+        text-align: center;
+    }
+    p{
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 0.8rem;
+    }
+    #texto{
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
+    h1{
+        font-size: 1.5rem;
+    }
+    h2{
+        font-size: 1rem;
+    }
+    h3{
+        font-size: 1.5rem;
+    }
+
+    .jogolink{
+        font-size: 30px;
+        color: rgb(255, 255, 255);
+        filter: opacity(100%);
+        font-family: Impact, Haettenschweiler, 'Arial', sans-serif;
+        text-decoration: none;
+        border: rgb(255, 255, 255) solid 4px;
+        border-radius: 30px;
+        padding: 10px;
+        background-color: gray;
+    }
+    
+    .jogolink:hover{
+        padding: 10px;
+        color: #fff;
+    }
+
+    footer{
+        font-size: 0.5rem;
+    }
+    
+    .a_footer{
+        background-color: rgb(255, 255, 255);
+        color: black;
+        transition: 0.0s;
+        filter: opacity(100%);
+        font-family: Impact, Haettenschweiler, 'Arial', sans-serif;
+        text-decoration: none;
+        border-radius: 0.5rem;
+        padding: 0rem;
+        font-size: small;
+
+    }
+    
+    .a_footer:hover{
+        background-color: #fff;
+        font-family: Impact, Haettenschweiler, 'Arial', sans-serif;
+        text-decoration: none;
+        color: rgb(0, 0, 0);
+        border-radius: 0rem;
+        padding: 0rem;    
+        border-color: black;
+    }
+    
+    img{  
+        display: block;            
+        margin-left: auto;       
+        margin-right: auto;      
+        max-width: 100%;         
+        height: auto;     
+        border-radius: 1rem; 
+        border: rgb(0, 0, 0) solid 0.02rem;
+    }  
+    
+}  

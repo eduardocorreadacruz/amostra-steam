@@ -1,0 +1,95 @@
+body {
+  background: rgb(166, 197, 211);
+  border: 2px solid black;
+  margin: 170px 30px;
+  border-radius: 23px;
+  text-align: center;
+  justify-content: center;
+}
+
+html {
+  background-color: rgb(93, 100, 106);
+}
+
+p {
+  color: black;
+}
+
+
+
+header {
+  text-align: center;
+}
+
+h1 {
+  font-family: monospace;
+  color: white;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+button, select {
+  background-color: black;
+  color: white;
+  text-align: center;
+  font-size: 1.2rem;
+  border-radius: 4px;
+  padding: 4px;
+}
+
+.texto {
+  color: white;
+  font-size: 1.2rem;
+}
+
+.jogo_link {
+  padding: 4px;
+}
+
+
+
+
+a {
+  background-color: black;
+  transition: 0.5s;
+  filter: opacity(100%);
+  font-family: Impact, Haettenschweiler, Arial, sans-serif;
+  text-decoration: none;
+  border-radius: 20px;
+  border: 3px solid white;
+  padding: 4px;
+  color: white;
+}
+
+a:hover {
+  font-family: Impact, Haettenschweiler, Arial, sans-serif;
+  text-decoration: none;
+  color: white;
+  border-radius: 20px;
+  padding: 5px;
+}
+
+.cabecalho {
+  background-color: darkgray;
+  padding: 15px;
+  position: fixed;
+  left: -39px;
+  top: 8px;
+  border: 3px solid black;
+  border-radius: 20px;
+}
+
+.cabecalho a {
+  color: white;
+  text-decoration: none;
+}
+
+.areaJogo {
+  display: flex;
+  justify-content: center;
+}
+

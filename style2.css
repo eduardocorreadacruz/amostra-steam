@@ -1,0 +1,159 @@
+body{
+  background: rgb(173, 171, 171);
+  border: 2px solid black;
+  margin: 170px 30px;
+  border-radius: 23px;
+  text-align: center;
+  justify-content: center;
+}
+
+html{
+  background-color: rgb(166, 206, 243);
+}
+
+p{
+  color: black;
+}
+
+header{
+  text-align: center;
+}
+
+h1{
+  text-align: center;
+	margin:5px;
+  font-weight: bold;
+  padding: 1px 1px 1px ;
+  background-color: lightgray;
+  text-shadow: -1px -1px black, 1px 1px white;
+  color: gray;
+	border-radius: 7px;
+  box-shadow: 0 .2em gray; 
+  cursor: default;
+  margin-left: 600px;
+  margin-right: 600px;
+}
+
+.container{
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+button, select{
+  text-align: center;
+	display: inline-block;
+	margin:5px;
+  font-weight: bold;
+  padding: 10px 10px 10px ;
+  background-color: lightgray;
+  text-shadow: -1px -1px black, 1px 1px white;
+  color: gray;
+	border-radius: 7px;
+  box-shadow: 0 .2em gray; 
+  cursor: pointer;
+}
+
+.texto{
+  text-align: center;
+	margin:5px;
+  font-weight: bold;
+  padding: 1px 1px 1px ;
+  background-color: lightgray;
+  text-shadow: -1px -1px black, 1px 1px white;
+  color: gray;
+	border-radius: 7px;
+  box-shadow: 0 .2em gray;
+  cursor: default; 
+  margin-left: 35rem;
+  margin-right: 35rem;
+}
+
+.jogo_link{
+  padding: 4px;
+}
+
+a{
+  text-align: center;
+	display: inline-block;
+	margin:5px;
+  font-weight: bold;
+  padding: 10px 10px 10px ;
+  background-color: lightgray;
+  text-shadow: -1px -1px black, 1px 1px white;
+  color: gray;
+	border-radius: 7px;
+  box-shadow: 0 .2em gray; 
+  cursor: pointer;
+}
+
+a:hover{
+	box-shadow: none;
+	position: relative;
+	top: .2em;
+}
+
+.cabecalho{
+  background-color: darkgray;
+  padding: 15px;
+  position: fixed;
+  left: -39px;
+  top: 8px;
+  border: 3px solid black;
+  border-radius: 20px;
+}
+
+.cabecalho a{
+  color: white;
+  text-decoration: none;
+}
+
+.areaJogo{
+  display: flex;
+  justify-content: center;
+  transition: transform 0.3s;
+}
+
+.areaJogo div:hover {  
+  transform: rotatey(20deg);
+}  
+
+.back-btn:active, .start-btn:active {
+	box-shadow: none;
+	position: relative;
+	top: .2em;
+}
+
+.start-btn{
+  text-align: center;
+	display: inline-block;
+	margin:5px;
+  font-weight: bold;
+  padding: 10px 10px 10px ;
+  background-color: lightgray;
+  text-shadow: -1px -1px black, 1px 1px white;
+  color: gray;
+	border-radius: 7px;
+  box-shadow: 0 .2em gray; 
+  cursor: pointer;
+}
+.video-game-button:active, .start-btn:active {
+	box-shadow: none;
+	position: relative;
+	top: .2em;
+}
+
+.buttons{
+  text-align: center;
+	display: inline-block;
+	margin:5px;
+  font-weight: bold;
+  padding: 10px 10px 10px ;
+  background-color: lightgray;
+  text-shadow: -1px -1px black, 1px 1px white;
+  color: gray;
+	border-radius: 7px;
+  box-shadow: 0 .2em gray; 
+  cursor: pointer;
+}
+

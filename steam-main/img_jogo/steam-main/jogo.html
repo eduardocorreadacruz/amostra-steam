@@ -1,0 +1,35 @@
+<!DOCTYPE html>  
+<html lang="pt-BR">  
+<head>  
+    <meta charset="UTF-8">  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <link rel="stylesheet" href="style_jogo.css">  
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.2/dist/confetti.browser.min.js"></script>  
+    <script src="jogo.js" defer></script>  
+    <title>Jogo Memória</title>  
+</head>  
+<body>  
+    <div class="jogo_link"></div>  
+    <a href="index.html">Home</a>  
+    <header>  
+        <h1>Jogo da memória interativo</h1>  
+        <div class="container">  
+            <select id="dimensao">  
+                <option value="2">2 x 2</option>  
+                <option value="4">4 x 4</option>  
+                <option value="6">6 x 6</option>  
+                <option value="8">8 x 8</option>  
+            </select>  
+            <br>  
+            <button onclick="reiniciarJogo()">Começar</button>  
+            <button id="pausarJogo">Pausar Timer</button>  
+        </div>  
+        <p class="texto">Pontuação: <span id="pontos">0</span></p>  
+        <p>Tempo: <span id="tempo">0</span>s</p>  
+    </header>  
+    <main>  
+        <div class="areaJogo" id="areaJogo"></div>  
+    </main>  
+    <br>  
+</body>  
+</html>  
