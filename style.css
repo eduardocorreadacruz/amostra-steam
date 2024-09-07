@@ -9,8 +9,8 @@ body{
 
 html{
     background-color: rgb(93, 100, 106);
-    background-image: url('./img/background.jpeg'); /* Ensure correct path */  
-    background-size: cover; /* Ensure the image covers the whole background */  
+    background-image: url('./img/background.jpeg'); 
+    background-size: cover;
  
 }
 
@@ -152,10 +152,10 @@ footer{
 }
 
 .video_home {  
-    display: block; /* Makes the iframe a block element */  
-    margin: 20px auto; /* Centers the iframe horizontally with margin */  
-    border: none; /* Removes the default border */  
-    max-width: 100%; /* Ensures the iframe is responsive */  
+    display: block;
+    margin: 20px auto;
+    border: none; 
+    max-width: 100%; 
 } 
  
 
