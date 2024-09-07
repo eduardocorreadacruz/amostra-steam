@@ -1,4 +1,5 @@
 body{
+    background-image: url(./img/background.jpeg);
     background:rgb(166, 197, 211);
     border: 2px rgb(0, 0, 0) solid;
     margin-left: 170px;
@@ -8,6 +9,9 @@ body{
 
 html{
     background-color: rgb(93, 100, 106);
+    background-image: url('./img/background.jpeg'); /* Ensure correct path */  
+    background-size: cover; /* Ensure the image covers the whole background */  
+ 
 }
 
 .cabecalho{
