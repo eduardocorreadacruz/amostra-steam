@@ -21,17 +21,17 @@ function pausarJogo() {
     if (!jogoPausado) {  
         clearInterval(timer);  
         jogoPausado = true;  
-        bloqueio = true;  
-        document.getElementById('pausarJogo').textContent = 'Retomar';  
+        bloqueio = true; // Bloqueia a interação com as cartas  
+        document.getElementById('pausarJogo').textContent = 'Retomar'; // Atualiza o texto do botão  
     }  
 }  
 
 function retomarJogo() {  
     if (jogoPausado) {  
-        iniciarTimer();  
-        jogoPausado = false;  
-        bloqueio = false;  
-        document.getElementById('pausarJogo').textContent = 'Pausar';  
+        iniciarTimer(); // Reinicia o temporizador  
+        jogoPausado = false;   
+        bloqueio = false; // Permite a interação novamente  
+        document.getElementById('pausarJogo').textContent = 'Pausar'; // Atualiza o texto do botão  
     }  
 }  
 
@@ -111,12 +111,12 @@ function piscarCartasFinal() {
         if (contador === 6) {  
             clearInterval(intervaloPiscar);  
             clearInterval(timer);  
-            
+
             const minutos = Math.floor(tempoDecorrido / 60);  
             const segundos = tempoDecorrido % 60;  
       
             alert(`Parabéns! Você completou o jogo em ${minutos} minutos e ${segundos} segundos!`);  
-            yiipe.play();   
+            yiipe.play();  
             confetti({  
                 particleCount: 1000,  
                 startVelocity: 60,  
@@ -150,7 +150,7 @@ function reiniciarJogo() {
     const dim = obterDimensao();  
     totalPares = (dim * dim) / 2;  
     criarGrid(dim);  
-    iniciarTimer();  // Inicia o temporizador  
+    iniciarTimer(); // Inicia o temporizador  
 }  
 
 function obterDimensao() {  
