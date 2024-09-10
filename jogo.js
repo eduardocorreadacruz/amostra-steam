@@ -3,23 +3,22 @@ let segundaCarta = null;
 let bloqueio = false;  
 let pontuacao = 0;  
 let totalPares;  
-let timer;  
+let timer = null;  
 let tempoDecorrido = 0;  
 let jogoPausado = false;  
 const yiipe = new Audio("audio/Yippee.mp3");  
 
 function iniciarTimer() {  
-    if (!timer) {  
-        timer = setInterval(() => {  
-            tempoDecorrido++;  
-            document.querySelector('.tempo').textContent = tempoDecorrido;  
-        }, 1000);  
-    }  
+    timer = setInterval(() => {  
+        tempoDecorrido++;  
+        document.querySelector('.tempo').textContent = tempoDecorrido;  
+    }, 1000);  
 }  
 
 function pausarJogo() {  
     if (!jogoPausado) {  
-        clearInterval(timer);  
+        clearInterval(timer);  // Para o temporizador  
+        timer = null;  // Limpa a referência do timer  
         jogoPausado = true;  
         bloqueio = true; // Bloqueia a interação com as cartas  
         document.getElementById('pausarJogo').textContent = 'Retomar'; // Atualiza o texto do botão  
