@@ -5,46 +5,45 @@ let pontuacao = 0;
 let totalPares;  
 let timer;  
 let tempoDecorrido = 0;  
-let jogoPausado = false;
+let jogoPausado = false;  
 const yiipe = new Audio("audio/Yippee.mp3");  
 
 function iniciarTimer() {  
-
     if (!timer) {  
         timer = setInterval(() => {  
             tempoDecorrido++;  
-            document.querySelector('.tempo').textContent = tempoDecorrido;
+            document.querySelector('.tempo').textContent = tempoDecorrido;  
         }, 1000);  
     }  
 }  
 
 function pausarJogo() {  
     if (!jogoPausado) {  
-        clearInterval(timer);
+        clearInterval(timer);  
         jogoPausado = true;  
-        bloqueio = true;
-        document.getElementById('pausarJogo').textContent = 'Retomar';
+        bloqueio = true;  
+        document.getElementById('pausarJogo').textContent = 'Retomar';  
     }  
 }  
 
 function retomarJogo() {  
     if (jogoPausado) {  
-        jogoPausado = false; 
-        iniciarTimer();
-        bloqueio = false; 
-        document.getElementById('pausarJogo').textContent = 'Pausar';
+        iniciarTimer();  
+        jogoPausado = false;  
+        bloqueio = false;  
+        document.getElementById('pausarJogo').textContent = 'Pausar';  
     }  
 }  
 
-function toggleJogo(){  
+function toggleJogo() {  
     if (jogoPausado) {  
-        retomarJogo();
+        retomarJogo();  
     } else {  
-        pausarJogo();
+        pausarJogo();  
     }  
 }  
 
-function virarCarta(event){  
+function virarCarta(event) {  
     if (bloqueio) return;  
     const carta = event.currentTarget;  
     const imagem = carta.querySelector('img');  
@@ -65,7 +64,7 @@ function virarCarta(event){
     }  
 }  
 
-function compararCartas(){  
+function compararCartas() {  
     bloqueio = true;  
     const srcPrimeiraCarta = primeiraCarta.querySelector('img').getAttribute('src');  
     const srcSegundaCarta = segundaCarta.querySelector('img').getAttribute('src');  
@@ -76,7 +75,7 @@ function compararCartas(){
             segundaCarta.style.pointerEvents = 'none';  
             pontuacao++;  
             document.getElementById('pontos').textContent = pontuacao;  
-            
+
             if (pontuacao === totalPares) {  
                 piscarCartasFinal();  
             } else {  
@@ -94,13 +93,13 @@ function compararCartas(){
     }  
 }  
 
-function resetarCartas(){  
+function resetarCartas() {  
     primeiraCarta = null;  
     segundaCarta = null;  
     bloqueio = false;  
 }  
 
-function piscarCartasFinal(){  
+function piscarCartasFinal() {  
     const cartas = document.querySelectorAll('.areaJogo div');  
     let contador = 0;  
     const intervaloPiscar = setInterval(() => {  
@@ -109,10 +108,10 @@ function piscarCartasFinal(){
         });  
         contador++;  
 
-        if (contador === 6){  
+        if (contador === 6) {  
             clearInterval(intervaloPiscar);  
             clearInterval(timer);  
-
+            
             const minutos = Math.floor(tempoDecorrido / 60);  
             const segundos = tempoDecorrido % 60;  
       
@@ -132,7 +131,7 @@ function piscarCartasFinal(){
     }, 300);  
 }  
 
-function reiniciarJogo(){  
+function reiniciarJogo() {  
     const areaJogo = document.getElementById('areaJogo');  
     while (areaJogo.firstChild) {  
         areaJogo.removeChild(areaJogo.firstChild);  
@@ -143,7 +142,7 @@ function reiniciarJogo(){
     primeiraCarta = null;  
     segundaCarta = null;  
     bloqueio = false;  
-    jogoPausado = false;
+    jogoPausado = false; // Reseta o estado do jogo  
     clearInterval(timer);  
     timer = null;  
     tempoDecorrido = 0;  
@@ -151,7 +150,7 @@ function reiniciarJogo(){
     const dim = obterDimensao();  
     totalPares = (dim * dim) / 2;  
     criarGrid(dim);  
-    iniciarTimer();
+    iniciarTimer();  // Inicia o temporizador  
 }  
 
 function obterDimensao() {  
@@ -171,7 +170,7 @@ function embaralharCarta(carta) {
     }  
 }  
 
-function criarGrid(dim){  
+function criarGrid(dim) {  
     const areaJogo = document.getElementById('areaJogo');  
     areaJogo.style.display = 'grid';  
     areaJogo.style.gridTemplateColumns = `repeat(${dim}, 49px)`;  
